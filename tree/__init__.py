@@ -15,8 +15,10 @@ from .classes import Tree
 def decorator(func):
     def wrapper(*args, **kwargs):
         tree.push(str(func.__name__))
-        func(*args, **kwargs)
+        ret = func(*args, **kwargs)
         tree.pop()
+
+        return ret
     return wrapper
 
 def enable(glob):
@@ -25,8 +27,8 @@ def enable(glob):
     if print_polymorph:
         glob['print'] = poly_out
 
-def poly_out(*args):
-    tree.out(*args)
+def poly_out(*args, **kwargs):
+    tree.out(*args, **kwargs)
 
 def get_functions(glob):
     return {key: val for key, val in glob.items() if callable(val)}
