@@ -38,3 +38,4 @@ exit_str = "└"
 
 padd_str = "─"
 padd_width = 2
+padd_len = 40

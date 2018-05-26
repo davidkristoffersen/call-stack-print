@@ -54,8 +54,8 @@ class Tree():
         if self.type == type_mid:
             print(col_reset + col_faint, end='')
 
-            padd_len = len(self.stack) * (padd_width + 1)
-            for i in range(50 - padd_len):
+            padd_sub = len(self.stack) * (padd_width + 1)
+            for i in range(padd_len - padd_sub):
                 print(self.padd_str, end='')
             print(col_reset, end=' ')
 
