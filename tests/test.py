@@ -5,7 +5,6 @@ myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + '/../')
 
 import tree
-import defines
 
 # Initialization
 
@@ -40,12 +39,8 @@ def func6():
     print("Mid")
 
 # Global variables
-
 tree.enable(globals())
 
-# Testing methods
-
-exec(defines.create_tests)
-
+from helper import run_tests
 if __name__ == "__main__":
-    exec(defines.run_tests)
+    run_tests(globals())
