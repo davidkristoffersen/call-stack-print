@@ -4,4 +4,4 @@ python:
 install:
     - pip install -r requirements.txt
 srcipt:
-    - pytest
+    - python3 tree_test.py
