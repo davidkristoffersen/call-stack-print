@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import tree
+import defines
+
+# Initialization
 
 class A():
     def __str__(self):
@@ -32,6 +35,13 @@ def func5():
 def func6():
     print("Mid")
 
+# Global variables
+
+tree.enable(globals())
+
+# Testing methods
+
+exec(defines.create_tests)
+
 if __name__ == "__main__":
-    tree.enable(globals())
-    func1()
+    exec(defines.run_tests)
