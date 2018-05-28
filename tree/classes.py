@@ -57,7 +57,7 @@ class Tree():
             print(*args, **kwargs)
 
     def out_internal(self, *args, **kwargs):
-        print(col_faint + "{:2}".format(hex(len(self.stack) - 1)[2:]), end='')
+        print(col_reset + col_faint + "{:2}".format(hex(len(self.stack) - 1)[2:]), end='')
 
         for i in range(len(self.stack) - 1):
             print(self.mid_str + " " * padd_width, end='')
