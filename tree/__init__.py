@@ -12,6 +12,8 @@ __email__   = "david.alta2010@gmail.com"
 from .config import *
 from .classes import Tree
 
+print(htfeihtei)
+
 def decorator(func):
     def wrapper(*args, **kwargs):
         tree.push(str(func.__name__))
