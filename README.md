@@ -1,7 +1,7 @@
 # call_stack_print
 
 [![Build Status](https://travis-ci.org/davidkristoffersen/call_stack_print.svg?branch=master)](https://travis-ci.org/davidkristoffersen/call_stack_print/builds)
-![HitCount](http://solnes.co/hitcounter-badge/davidkristoffersen/call_count_print.svg)
+![HitCount](http://solnes.co/hitcounter-badge/davidkristoffersen/call_count_print/.svg)
 ![badge](https://img.shields.io/badge/implemented-yes-brightgreen.svg?style=flat)
 
 ## How to use
