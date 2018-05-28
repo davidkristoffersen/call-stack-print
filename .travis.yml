@@ -2,4 +2,4 @@ language: python
 python:
     - "3.6.3"
 script:
-    - pytest tests/
+    - pytest -o cache_dir=tests/cache tests/
