@@ -1,21 +1,6 @@
 #!/usr/bin/env python3
 
 from .config import *
-import json
-from functools import reduce
-import sys
-from io import StringIO
-
-class ListStream:
-    def __init__(self):
-        self.data = []
-    def write(self, s):
-        self.data.append(s)
-    def __enter__(self):
-        sys.stdout = self
-        return self
-    def __exit__(self, ext_type, exc_value, traceback):
-        sys.stdout = sys.__stdout__ 
 
 class Tree():
     def __init__(self):
@@ -46,12 +31,8 @@ class Tree():
 
     def out(self, *args, **kwargs):
         if print_tree and len(self.stack):
-            with ListStream() as x:
-                print(*args, **kwargs)
-            lines = x.data
-            lines = ''.join(x.data[:-1])
-
-            for line in lines.split('\n'):
+            lines = ' '.join([str(arg) for arg in args]).split('\n')
+            for line in lines:
                 self.out_internal(line)
         else:
             print(*args, **kwargs)
