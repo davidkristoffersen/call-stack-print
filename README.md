@@ -5,8 +5,12 @@
 
 In a python file:
 
-`$ import tree`
+```python
+import tree
+```
 
 At the start of your main function:
 
-`$ tree.enable(globals())`
+```python
+tree.enable(globals())
+```
