@@ -32,7 +32,6 @@ def func5():
 def func6():
     print("Mid")
 
-assert 4 == 2
 if __name__ == "__main__":
     tree.enable(globals())
     func1()
