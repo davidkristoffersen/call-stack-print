@@ -1,2 +1,4 @@
 tree/__pycache__/
-tree_test.py
+__pycache__/
+.pytest_cache/
+tree/.pytest_cache/
