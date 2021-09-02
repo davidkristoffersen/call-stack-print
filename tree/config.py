@@ -6,8 +6,8 @@ Configuration document.
 Contain variables for global access and easier debugging.
 """
 
-__author__  = "David Kristoffersen"
-__email__   = "david.alta2010@gmail.com"
+__author__ = "David Kristoffersen"
+__email__ = "david.alta2010@gmail.com"
 
 """
 User variables: Can be modified
